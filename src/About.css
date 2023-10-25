@@ -1,0 +1,25 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    text-align: center; /* Center text within the container */
+}
+
+.about-item {
+    font-size: 24px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.crew-image {
+    border-radius: 50%;
+    margin-top: 20px; /* Add some space above the image */
+}

@@ -1,0 +1,76 @@
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.crew-block {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 10px solid transparent; /* Default border style */
+}
+
+.rainbow-bg {
+    background-color: #f5f5f5;
+    border: 10px solid black; /* Make the border transparent */
+    background-clip: padding-box; /* This ensures the background does not go under the border */
+    box-shadow: 5px 5px 10px 0px transparent; /* Make the box-shadow transparent */
+    -webkit-background-clip: padding-box; /* For Webkit browsers (Safari) */
+    background-image: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff9900,
+        #33cc33,
+        #0099ff,
+        #9900cc,
+        #ff0099
+    );
+    box-shadow: 5px 5px 10px 0px black;
+}
+
+.crew-image {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.crew-info {
+    font-size: 18px;
+    color: #333;
+}
+
+.crew-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.crew-details {
+    margin: 0;
+}
+
+/* Hover effect for crew-block */
+.crew-block:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Click effect for crew-block */
+.crew-block:active {
+    transform: scale(0.95); /* Decrease size when clicked */
+}
+
+/* Hover effect for rainbow-bg */
+.rainbow-bg:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+/* Click effect for rainbow-bg */
+.rainbow-bg:active {
+    background-color: #e0e0e0; /* Change background color when clicked */
+}
